@@ -113,19 +113,16 @@ body {
 ```
 ├── README.md                  # 项目说明文件
 ├── LICENSE                    # MIT 开源许可证
-├── fonts/
-│   ├── hengshui_gelpen/       # 衡水中性笔体
-│   │   ├── hengshui_gelpen.ttf
-│   │   ├── hengshui_gelpen.otf
-│   │   ├── hengshui_gelpen.woff
-│   │   ├── hengshui_gelpen.woff2
-│   │   └── hengshui_gelpen.svg
-│   └── hengshui_fountainpen/  # 衡水钢笔体
-│       ├── hengshui_fountainpen.ttf
-│       ├── hengshui_fountainpen.otf
-│       ├── hengshui_fountainpen.woff
-│       ├── hengshui_fountainpen.woff2
-│       └── hengshui_fountainpen.svg
+├── 衡水中性笔体.ttf
+├── 衡水中性笔体.otf
+├── 衡水中性笔体.woff
+├── 衡水中性笔体.woff2
+└── 衡水中性笔体.svg
+├── 衡水钢笔体.ttf
+├── 衡水钢笔体.otf
+├── 衡水钢笔体.woff
+├── 衡水钢笔体.woff2
+└── 衡水钢笔体.svg
 
 
 ## 注意事项
