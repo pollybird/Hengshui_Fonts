@@ -31,6 +31,7 @@
 | 属性 | 值 |
 |------|------|
 | 字体名称 | 衡水中性笔体 |
+| 内部族名 (Family) | `衡水中性笔体` |
 | 英文名 | Hengshui Gel Pen |
 | 字体族 ID | `hengshui_gelpen` |
 | 字重 | Regular (400) |
@@ -43,6 +44,7 @@
 | 属性 | 值 |
 |------|------|
 | 字体名称 | 衡水钢笔体 |
+| 内部族名 (Family) | `衡水钢笔体` |
 | 英文名 | Hengshui Fountain Pen |
 | 字体族 ID | `hengshui_fountainpen` |
 | 字重 | Regular (400) |
@@ -117,12 +119,24 @@ body {
 }
 ```
 
+> **说明**：上面 `@font-face` 中的 `font-family`（`Hengshui Gel Pen` / `Hengshui Fountain Pen`）是**自定义的英文别名**，只要 `src` 指向正确文件即可生效，与字体内部族名无关。若你是**把字体安装到系统**后直接在 CSS 中引用（不经 `@font-face`），则必须使用字体的**内部族名**。两者对应关系如下：
+>
+> | 字体 | @font-face 别名（推荐 Web 使用） | 内部族名（系统安装后引用） | PostScript 名 |
+> |------|----------------------------------|----------------------------|---------------|
+> | 中性笔体 | `Hengshui Gel Pen` | `衡水中性笔体` | `hengshui_gelpen-Regular` |
+> | 钢笔体 | `Hengshui Fountain Pen` | `衡水钢笔体` | `hengshui_fountainpen-Regular` |
+
 ### SVG 字体直接在 HTML 中使用
 
 ```html
-<!-- 将 SVG 字体文件直接嵌入页面 -->
-<object type="image/svg+xml" data="hengshui_gelpen.svg#hengshui_gelpen-Regular"></object>
+<!-- 衡水中性笔体 -->
+<object type="image/svg+xml" data="衡水中性笔体.svg#hengshui_gelpen"></object>
+
+<!-- 衡水钢笔体 -->
+<object type="image/svg+xml" data="衡水钢笔体.svg#hengshui_fountainpen"></object>
 ```
+
+> 注意：SVG 字体已不再被现代浏览器的 `@font-face` 支持（Chrome 36 起移除），仅能通过 `<object>` 内嵌方式使用，因此这里的 `data` 锚点取自 SVG 文件内部的 `<font id>`（`hengshui_gelpen` / `hengshui_fountainpen`），而非 PostScript 名。
 
 ### 桌面应用安装
 
@@ -144,7 +158,12 @@ body {
 ├── 衡水钢笔体.otf
 ├── 衡水钢笔体.woff
 ├── 衡水钢笔体.woff2
-└── 衡水钢笔体.svg
+├── 衡水钢笔体.svg
+└── preview/                   # 效果预览图
+    ├── 字形全览-中性笔体.png
+    ├── 字形全览-钢笔体.png
+    ├── 实排效果.png
+    └── 笔端细节对照.png
 ```
 
 ## 注意事项
@@ -153,6 +172,7 @@ body {
 2. **SVG 字体**：SVG 格式可直接在浏览器中通过 `<object>` 或 `@font-face` 引入使用，但部分浏览器可能对 SVG 字体支持有限，建议作为备选方案。
 3. **字符集**：当前版本主要覆盖英文字母（大写/小写）、数字及常用标点符号。如需扩展字符集（如希腊字母、音标符号等），欢迎提交 Issue 或 Pull Request。
 4. **字体渲染**：不同操作系统和浏览器的字体渲染引擎存在差异，建议在实际部署环境中测试渲染效果。
+5. **族名修复**：v1.000 已将字体族名（Family Name）修正为正确的中文（`衡水中性笔体` / `衡水钢笔体`），TTF / OTF / WOFF / WOFF2 各格式均已生效。
 
 ---
 
