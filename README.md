@@ -1,56 +1,46 @@
+<div align="center">
 
-# 衡水体英语字体 (Hengshui English Handwriting Fonts)
+# 衡水体字体系列
 
-> 根据中高考英语试卷"衡水体"书写风格制作的开源英文字体，提供 TTF / OTF / WOFF / WOFF2 / SVG 五种格式。
+**衡水中性笔体 · 衡水钢笔体**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+基于衡水风格英文手写字形，模拟真实笔端起笔与收笔笔锋的西文字体家族
+
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![Format](https://img.shields.io/badge/format-TTF%20%7C%20OTF%20%7C%20WOFF%20%7C%20WOFF2%20%7C%20SVG-informational)
+![Glyphs](https://img.shields.io/badge/glyphs-409-brightgreen)
+
+</div>
 
 ---
 
 ## 项目简介
 
-本项目包含两套根据中国中高考英语试卷上流行的**"衡水体"**书写风格制作的英文字体。
+本项目包含两款西文字体，字形取自同一套衡水风格的英文手写矢量字形。基本拉丁字母的**字形轮廓逐点保持不变**，改动只发生在每一笔的**起笔与收笔**两端，分别模拟两种常见硬笔书写工具的笔触：
 
-**衡水体**是中国中学生英语考试中一种非常流行的书写风格，其特点是：
+- **衡水中性笔体** —— 模拟 0.5 mm 滚珠中性笔：入笔微顿、收笔略细，落笔与提笔利落；
+- **衡水钢笔体** —— 模拟金属尖钢笔：入笔顿笔、收笔出锋，末端细长尖锐。
 
-- 字母圆润饱满，笔画均匀
-- 排列整齐紧凑，行距均匀
-- 倾斜度小，接近印刷体效果
-- 整体观感工整美观，阅卷友好
+变音字母（é è ñ ü ö ç 等 251 个）由源字形的基字母与变音符号部件**按 Unicode 分解自动合成**，定位与缩放参数由源字形几何实测推导。
 
-本项目将这种手写风格数字化为矢量字体，方便在各种场景中使用。
+两款字体均为 2048 units/em，各覆盖 **408 个字符码位**（非空字形 407 个），适合标题、笔记、手账、板书素材、品牌文案等需要"手写感但不潦草"的场景。
 
----
+## 字体档案
 
-## 字体介绍
-
-### 1. 衡水中性笔体（Hengshui Gel Pen）
-
-模拟中性笔（凝胶笔）书写效果。笔画圆润流畅，线条粗细较为均匀，适合日常书写、文档排版和打印使用。
-
-| 属性 | 值 |
-|------|------|
-| 字体名称 | 衡水中性笔体 |
-| 内部族名 (Family) | `衡水中性笔体` |
-| 英文名 | Hengshui Gel Pen |
-| 字体族 ID | `hengshui_gelpen` |
-| 字重 | Regular (400) |
-| 字体方向 | 水平 |
-
-### 2. 衡水钢笔体（Hengshui Fountain Pen）
-
-模拟钢笔书写效果。笔画带有钢笔书写的自然粗细变化，起笔和收笔处有明显的笔触特征，更具手写感和书写韵味。
-
-| 属性 | 值 |
-|------|------|
-| 字体名称 | 衡水钢笔体 |
-| 内部族名 (Family) | `衡水钢笔体` |
-| 英文名 | Hengshui Fountain Pen |
-| 字体族 ID | `hengshui_fountainpen` |
-| 字重 | Regular (400) |
-| 字体方向 | 水平 |
-
----
+| 项目 | 衡水中性笔体 | 衡水钢笔体 |
+| --- | --- | --- |
+| 中文名称 | 衡水中性笔体 | 衡水钢笔体 |
+| 英文名称 | `hengshui_gelpen` | `hengshui_fountainpen` |
+| PostScript 名称 | `hengshui_gelpen-Regular` | `hengshui_fountainpen-Regular` |
+| 完整名称 | hengshui_gelpen Regular | hengshui_fountainpen Regular |
+| 版本 | 1.100 | 1.100 |
+| 笔端风格 | 滚珠中性笔：短促、圆钝 | 金属钢笔：顿笔、出锋 |
+| 入笔 / 收笔 | 入笔约 105%，收笔收细至约 92% | 入笔约 110%，收笔收细至约 78% |
+| 出锋锥长 | 约 1.0 × 笔画宽度（封顶 170 单位） | 约 1.0–1.3 × 笔画宽度（封顶 230 单位） |
+| 字形数 / 码位数 | 409 / 408 | 409 / 408 |
+| unitsPerEm | 2048 | 2048 |
+| 嵌入权限 | 0（允许自由嵌入） | 0（允许自由嵌入） |
+| 授权 | MIT | MIT |
 
 ## 效果预览
 
@@ -66,7 +56,7 @@
 
 ### 笔端起收锋对照
 
-上排为衡水中性笔体，下排为衡水钢笔体，同一字号放大，可直接对比笔端的锥形出锋差异。
+上两排为整字对照：衡水中性笔体与衡水钢笔体同字号排列；下方为同一字符（J、l）两款并排放大，可直接对比入笔顿笔与收笔出锋的形态差异。
 
 ![笔端细节对照](preview/笔端细节对照.png)
 
@@ -74,141 +64,140 @@
 
 ![实排效果](preview/实排效果.png)
 
-## 可用格式
 
-每套字体均已转换为以下五种格式，覆盖桌面应用、Web 开发和矢量图形等场景：
+### 已修复的问题
 
-| 格式 | 扩展名 | 适用场景 |
-|------|--------|----------|
-| TTF (TrueType Font) | `.ttf` | 兼容性最好，适用于 Windows / macOS / Linux 系统及大多数办公软件 |
-| OTF (OpenType Font) | `.otf` | 支持更多高级排版功能（连字、替代字形等），适合专业排版 |
-| WOFF | `.woff` | Web 字体格式，适用于 CSS `@font-face` 嵌入网页 |
-| WOFF2 | `.woff2` | Web 字体格式，压缩率比 WOFF 更高，页面加载更快 |
-| SVG | `.svg` | 矢量格式，可无限放大不失真，也可作为 SVG 字体直接在 HTML 中使用 |
+- 早期版本曾出现字距异常（字形整体变窄、字与字挤在一起），原因是像素空间与字体坐标的横纵轴映射颠倒，已改为纯矢量处理；
+- 早期版本存在纵向坐标误翻转，导致整批字形落到基线以下、预览显示异常，已按源字形的 y 轴向上约定修正；
+- 早期版本把 122 个轮廓为负绕向的字形整体丢弃成空白（含大部分大写字母与数字），已改为按绝对面积选外轮廓、逐轮廓独立处理；
+- 早期版本的笔锋判据失效（闭合环判据 100% 命中、笔端位置假设错误），笔锋从未生效；现改为按折返角检测 U 形端帽，251 个开放笔画已正常加笔锋。
 
----
+## 字符覆盖
 
-## 快速开始
+每款字体共 **408 个字符码位**（非空字形 407 个，空格无轮廓属正常设计）：
 
-### Web 使用（CSS @font-face）
+- **基本拉丁字母**：`U+0020–U+007E` 全部 95 个字符（大小写字母、数字、标点、`_`）；
+- **拉丁-1 补充区**：U+00A0–U+00FF 中可用的 72 个：£ ¤ ¥ ¦ § ¨ © « ¬ ­ ® ° ´ ¶ · ¸ » À Á Â Ã Ä Å Ç È É Ê Ë Ì Í Î Ï Ñ Ò Ó Ô Õ Ö × Ù Ú Û Ü Ý à á â ã ä å ç è é ê ë ì í î ï ñ ò ó ô õ ö ÷ ù ú û ü ý ÿ（源中本为空的 Æ Ø Ð Þ ß 等未映射，见下）；
+- **拉丁扩展 A**：U+0100–U+017F 中 109 个：Ā ā Ă ă Ą ą Ć ć Ĉ ĉ Ċ ċ Č č Ď ď Ē ē Ĕ ĕ Ė ė Ę ę Ě ě Ĝ ĝ Ğ ğ Ġ ġ Ģ ģ Ĥ ĥ Ĩ ĩ Ī ī Ĭ ĭ Į į İ ı Ĵ ĵ Ķ ķ Ĺ ĺ Ļ ļ Ľ ľ Ń ń Ņ ņ Ň ň Ō ō Ŏ ŏ Ő ő Ŕ ŕ Ŗ ŗ Ř ř Ś ś Ŝ ŝ Ş ş Š š Ţ ţ Ť ť Ũ ũ Ū ū Ŭ ŭ Ů ů Ű ű Ų ų Ŵ ŵ Ŷ ŷ Ÿ Ź ź Ż ż Ž ž；
+- **拉丁扩展 B**：U+0180–U+024F 中 29 个：Ǎ ǎ Ǐ ǐ Ǒ ǒ Ǔ ǔ Ǧ ǧ Ǩ ǩ Ǫ ǫ ǰ Ǵ ǵ Ǹ ǹ Ȟ ȟ Ȧ ȧ Ȩ ȩ Ȯ ȯ Ȳ ȳ；
+- **间隔修饰符**：U+02B0–U+02FF 中 9 个：ˆ ˇ ˉ ˘ ˙ ˚ ˛ ˜ ˝；
+- **拉丁扩展附加**：U+1E00–U+1EFF 中 61 个：Ḃ ḃ Ḋ ḋ Ḑ ḑ Ḟ ḟ Ḡ ḡ Ḣ ḣ Ḧ ḧ Ḩ ḩ Ḱ ḱ Ḿ ḿ Ṁ ṁ Ṅ ṅ Ṕ ṕ Ṗ ṗ Ṙ ṙ Ṡ ṡ Ṫ ṫ Ṽ ṽ Ẁ ẁ Ẃ ẃ Ẅ ẅ Ẇ ẇ Ẋ ẋ Ẍ ẍ Ẏ ẏ Ẑ ẑ ẗ ẘ ẙ Ẽ ẽ Ỳ ỳ Ỹ ỹ；
+- **通用标点**：`– — ‘ ’ ‚ “ ” „ † ‡ • … ‹ › ⁄` 等 15 个；
+- **货币符号**：`¤ ¥ € ₣`；**数学符号**：`∂ ∆ ∏ ∑ − ∕ ∙ √ ∞ ∫ ≈ ≤ ≥` 等 13 个；
+- 另含 `ı`（无点 i，用于合成 `í ì î ï`）。
+
+**变音字母的合成方式**：源矢量只含基字母与独立的重音部件（grave 反引号形、´ acute、¨ diaeresis、¸ cedilla、ˆ ˚ ˇ ˘ ˙ ˝ ˛ ˉ ˜ 等）。构建时按 Unicode NFD 把目标字符分解为「基字母 + 组合变音符」，再把重音部件按源字形几何定位到基字母上——上方符号落在字顶之上约一个间隙处，下方符号（`ç` 的 cedilla、`ą` 的 ogonek）挂在基线下；大写因字顶更高，重音按可用空间自动等比缩小，不会顶出字框。
+
+**有意不映射的字符**：源矢量没有独立轮廓、也无法分解合成的字符不写入 cmap，包括 `Æ æ Ø ø Ð ð Þ þ ß`、合字 `ﬁ ﬂ`、`NBSP`、上标数字 `¹ ² ³`、分数 `¼ ½ ¾`、`ª º ¡ ¿`、序号 `№`、商标 `™` 等。不映射是为了让排版系统**自动回退到其他字体**正常显示，而不是在本字体里渲染成空白方块。
+
+## 文件格式说明
+
+每款字体提供 5 种格式，共 10 个文件。
+
+| 扩展名 | 典型体积（中性笔 / 钢笔） | 用途 | 说明 |
+| --- | --- | --- | --- |
+| `.ttf` | 1314 KB / 1317 KB | 桌面安装、通用 | TrueType 轮廓（二次曲线） |
+| `.otf` | 1078 KB / 1083 KB | 设计软件 | CFF 轮廓（三次曲线），字形内容一致 |
+| `.woff` | 129 KB / 135 KB | 网页 | TTF 的压缩容器 |
+| `.woff2` | 56 KB / 60 KB | 网页（首选） | 压缩率最高，体积最小 |
+| `.svg` | 4458 KB / 4462 KB | 数据留存 | SVG 字体，现代浏览器已弃用 |
+
+> 体积较早期版本明显增大，是因为变音字母合成使非空字形从 156 个增至 407 个，且笔锋处理按等弧长重采样加密了轮廓点；`.woff2` 压缩后仅约 60 KB，网页使用不受影响。
+
+> `.woff` / `.woff2` 与 `.ttf` 的字形轮廓、字宽、字符映射完全一致，仅容器不同。
+> **SVG 字体自 Chrome 38 起已被浏览器弃用**，该格式主要用于字形数据留存或老工具链，网页请优先使用 `.woff2` + `.woff`。
+
+## 安装
+
+### Windows
+
+双击 `.ttf` 或 `.otf` 文件，点击「安装」（或「为所有用户安装」）。安装后在 Word / Photoshop 等软件的字体列表中选择 **衡水中性笔体** 或 **衡水钢笔体**。
+
+### macOS
+
+双击 `.ttf` / `.otf` 文件，在「字体册」中点击「安装字体」。或把文件复制到 `~/Library/Fonts/`（仅当前用户）或 `/Library/Fonts/`（所有用户）。
+
+### Linux
+
+```bash
+mkdir -p ~/.local/share/fonts
+cp 衡水中性笔体.ttf 衡水钢笔体.ttf ~/.local/share/fonts/
+fc-cache -f -v
+```
+
+### 网页 / 小程序 / 设计工具
+
+网页与小程序请使用 `.woff2`（兼容旧环境时叠加 `.woff`）；Figma、Sketch 等设计工具本地安装 `.ttf` 或 `.otf` 即可使用。
+
+## 在网页中使用
+
+把 `.woff2` / `.woff` 文件放到站点目录，然后引入：
 
 ```css
-/* 衡水中性笔体 */
 @font-face {
-  font-family: 'Hengshui Gel Pen';
-  src: url('fonts/hengshui_gelpen.woff2') format('woff2'),
-       url('fonts/hengshui_gelpen.woff') format('woff'),
-       url('fonts/hengshui_gelpen.ttf') format('truetype');
-  font-weight: normal;
+  font-family: "hengshui_gelpen";
+  src: url("./衡水中性笔体.woff2") format("woff2"),
+       url("./衡水中性笔体.woff")  format("woff"),
+       url("./衡水中性笔体.ttf")   format("truetype");
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
-/* 衡水钢笔体 */
 @font-face {
-  font-family: 'Hengshui Fountain Pen';
-  src: url('fonts/hengshui_fountainpen.woff2') format('woff2'),
-       url('fonts/hengshui_fountainpen.woff') format('woff'),
-       url('fonts/hengshui_fountainpen.ttf') format('truetype');
-  font-weight: normal;
+  font-family: "hengshui_fountainpen";
+  src: url("./衡水钢笔体.woff2") format("woff2"),
+       url("./衡水钢笔体.woff")  format("woff"),
+       url("./衡水钢笔体.ttf")   format("truetype");
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
-/* 使用字体 */
-body {
-  font-family: 'Hengshui Gel Pen', 'Hengshui Fountain Pen', cursive;
-}
+/* 使用 */
+h1 { font-family: "hengshui_gelpen", sans-serif; }
+.note { font-family: "hengshui_fountainpen", sans-serif; }
 ```
 
-> **说明**：上面 `@font-face` 中的 `font-family`（`Hengshui Gel Pen` / `Hengshui Fountain Pen`）是**自定义的英文别名**，只要 `src` 指向正确文件即可生效，与字体内部族名无关。若你是**把字体安装到系统**后直接在 CSS 中引用（不经 `@font-face`），则必须使用字体的**内部族名**。两者对应关系如下：
->
-> | 字体 | @font-face 别名（推荐 Web 使用） | 内部族名（系统安装后引用） | PostScript 名 |
-> |------|----------------------------------|----------------------------|---------------|
-> | 中性笔体 | `Hengshui Gel Pen` | `衡水中性笔体` | `hengshui_gelpen-Regular` |
-> | 钢笔体 | `Hengshui Fountain Pen` | `衡水钢笔体` | `hengshui_fountainpen-Regular` |
+> 建议 CSS 中的 `font-family` 使用英文名（`hengshui_gelpen` / `hengshui_fountainpen`），避免部分构建工具对中文名处理异常。字体内部同时写入了中文名与英文名：中文环境下显示「衡水中性笔体」「衡水钢笔体」，英文环境下显示 `hengshui_gelpen`、`hengshui_fountainpen`。
 
-### SVG 字体直接在 HTML 中使用
-
-```html
-<!-- 衡水中性笔体 -->
-<object type="image/svg+xml" data="衡水中性笔体.svg#hengshui_gelpen"></object>
-
-<!-- 衡水钢笔体 -->
-<object type="image/svg+xml" data="衡水钢笔体.svg#hengshui_fountainpen"></object>
-```
-
-> 注意：SVG 字体已不再被现代浏览器的 `@font-face` 支持（Chrome 36 起移除），仅能通过 `<object>` 内嵌方式使用，因此这里的 `data` 锚点取自 SVG 文件内部的 `<font id>`（`hengshui_gelpen` / `hengshui_fountainpen`），而非 PostScript 名。
-
-### 桌面应用安装
-
-将 `.ttf` 或 `.otf` 文件双击，在字体预览器中确认效果后点击"安装"即可在系统中使用该字体。
-
----
-
-## 文件结构
+## 仓库结构
 
 ```
-├── README.md                  # 项目说明文件
-├── LICENSE                    # MIT 开源许可证
-├── 衡水中性笔体.ttf
-├── 衡水中性笔体.otf
-├── 衡水中性笔体.woff
-├── 衡水中性笔体.woff2
-├── 衡水中性笔体.svg
-├── 衡水钢笔体.ttf
-├── 衡水钢笔体.otf
-├── 衡水钢笔体.woff
-├── 衡水钢笔体.woff2
-├── 衡水钢笔体.svg
-└── preview/                   # 效果预览图
+.
+├── README.md
+├── LICENSE
+├── 衡水中性笔体.ttf / .otf / .woff / .woff2 / .svg
+├── 衡水钢笔体.ttf   / .otf / .woff / .woff2 / .svg
+└── preview/
     ├── 字形全览-中性笔体.png
     ├── 字形全览-钢笔体.png
+    ├── 笔端细节对照.png
     ├── 实排效果.png
-    └── 笔端细节对照.png
+    └── 与原字形对比.png
 ```
 
-## 注意事项
+## 授权协议
 
-1. **Web 性能**：生产环境推荐使用 WOFF2 格式以获得最佳压缩效果；如需兼容旧版浏览器，可同时提供 WOFF 作为降级方案。
-2. **SVG 字体**：SVG 格式可直接在浏览器中通过 `<object>` 或 `@font-face` 引入使用，但部分浏览器可能对 SVG 字体支持有限，建议作为备选方案。
-3. **字符集**：当前版本主要覆盖英文字母（大写/小写）、数字及常用标点符号。如需扩展字符集（如希腊字母、音标符号等），欢迎提交 Issue 或 Pull Request。
-4. **字体渲染**：不同操作系统和浏览器的字体渲染引擎存在差异，建议在实际部署环境中测试渲染效果。
-5. **族名修复**：v1.000 已将字体族名（Family Name）修正为正确的中文（`衡水中性笔体` / `衡水钢笔体`），TTF / OTF / WOFF / WOFF2 各格式均已生效。
+本项目（含字体文件本身）以 **MIT License** 发布，可免费用于个人与商业用途，包括再分发与修改。
 
----
+- 授权全文见仓库根目录的 [LICENSE](LICENSE)；
+- 许可信息已写入每个字体文件的名称表：版权声明（name ID 0）、完整 MIT 正文（name ID 13）、许可地址（name ID 14）；
+- 嵌入权限 `fsType` 为 `0`，允许在设计软件中自由嵌入，无预览或打印限制。
 
-## 开源协议
+```
+Copyright (c) 2026 Taizhou Jiangyan Zhongyu Information Technology Co., Ltd.
+Licensed under the MIT License.
+```
 
-本项目采用 **MIT 协议** 开源。
 
-你可以自由地：
-
-- 商业使用
-- 修改字体
-- 分发副本
-- 集成到闭源项目中
-
-但需保留版权声明和许可声明。
-
-详见 [LICENSE](LICENSE) 文件。
 
 ---
 
-## 贡献指南
+<div align="center">
 
-欢迎提交 Issue 反馈问题或提出改进建议，也欢迎提交 Pull Request 参与开发。
+**English Summary**
 
-贡献前请阅读：
+*Hengshui Gel Pen* (`hengshui_gelpen`) and *Hengshui Fountain Pen* (`hengshui_fountainpen`) are two Latin typefaces built on the same Hengshui-style handwritten letterforms. The middle of every stroke follows the source curve; only the **start and end of each stroke** are reshaped — a slight press at the entry and a tapered tip at the exit, blunt for the gel pen and sharp for the fountain pen. Accented Latin letters (é, è, ñ, ü, ç, …) are **composed** from the source base letters and combining accent parts via Unicode NFD decomposition. Each face maps 408 code points (407 visible glyphs) in five formats (TTF / OTF / WOFF / WOFF2 / SVG), licensed under the **MIT License**.
 
-1. 确保代码风格一致
-2. 更新相关文档
-3. 提交清晰的 Commit Message
-
----
-
-## 联系方式
-
-如有问题或合作意向，欢迎通过 [Issues](../../issues) 联系我们。
-
----
-
-*衡水体字体 — 让英文书写更工整美观*
+</div>
